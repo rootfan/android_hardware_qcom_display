@@ -11,7 +11,7 @@ endif
 
 display-hals += libgralloc1
 
-ifeq ($(call is-vendor-board-platform,QCOM),true)
+ifneq (,$(call is-vendor-board-qcom))
     include $(call all-named-subdir-makefiles,$(display-hals))
 else
 ifneq ($(filter msm% apq%,$(TARGET_BOARD_PLATFORM)),)
