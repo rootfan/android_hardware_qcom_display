@@ -23,12 +23,12 @@
 
 #include "memtrack_msm.h"
 
-int msm_memtrack_init(const struct memtrack_module *module)
+int msm_memtrack_init(__attribute__((unused)) const struct memtrack_module *module)
 {
     return 0;
 }
 
-int msm_memtrack_get_memory(const struct memtrack_module *module,
+int msm_memtrack_get_memory(__attribute__((unused)) const struct memtrack_module *module,
                                 pid_t pid,
                                 int type,
                                 struct memtrack_record *records,
