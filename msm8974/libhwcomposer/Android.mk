@@ -11,9 +11,7 @@ LOCAL_MODULE_TAGS             := optional
 LOCAL_SHARED_LIBRARIES        := $(common_libs) libEGL liboverlay \
                                  libexternal libqdutils libhardware_legacy \
                                  libdl libmemalloc libqservice libsync \
-                                 libbinder libmedia \
-                                 libbfqio
-
+                                 libbinder libmedia
 LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdhwcomposer\"
 LOCAL_HEADER_LIBRARIES        := display_headers generated_kernel_headers
 LOCAL_SRC_FILES               := hwc.cpp          \
